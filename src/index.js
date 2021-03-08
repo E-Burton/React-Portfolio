@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import {HashRouter as Router } from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.9.0";
 
@@ -38,7 +39,7 @@ ReactDOM.render(
       <Route path="/readme-generator" component={READMEGenerator} />
       <Route path="/weather-dashboard" component={WeatherDashboard} />
       <Route path="/contact-page" component={ContactPage} />
-      <Route path="/" component={ProfilePage} />
+      <Route exact path="/" component={ProfilePage} />
     </Switch>
   </Router>,
   document.getElementById("root")
