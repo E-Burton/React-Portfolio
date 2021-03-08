@@ -13,7 +13,7 @@ import { HTML5_FMT } from 'moment';
 
 const useStyles = makeStyles(styles);
 
-export default function ProjectDetails({title, image, deployedApp, repo, description}) {
+export default function ProjectDetails({title, image, deployedApp, repo, target, description}) {
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -35,7 +35,7 @@ export default function ProjectDetails({title, image, deployedApp, repo, descrip
               <h3 className={classes.title}>{title}</h3>
               <GridContainer justify="center">
                 <GridItem xs={6} sm={6} md={4}>
-                  <a target="_blank" href={deployedApp} rel="noreferrer">
+                  <a target={target} href={deployedApp} rel="noreferrer">
                       <h6>DEPLOYED APPLICATION</h6>
                   </a>
                 </GridItem>

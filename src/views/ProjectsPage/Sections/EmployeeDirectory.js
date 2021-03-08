@@ -47,6 +47,7 @@ export default function EmployeeDirectory(props) {
                 title="React Employee Directory"
                 image={project8}
                 deployedApp="https://e-burton.github.io/React-Employee-Directory/"
+                target="_blank"
                 repo="https://github.com/E-Burton/React-Employee-Directory"
             />
           </div>

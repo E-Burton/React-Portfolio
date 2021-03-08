@@ -47,6 +47,7 @@ export default function NoteTaker(props) {
                 title="Express Note Taker"
                 image={project5}
                 deployedApp="https://express-js-note-taker-e.herokuapp.com/"
+                target="_blank"
                 repo="https://github.com/E-Burton/Express.js-Note-Taker"
             />
           </div>

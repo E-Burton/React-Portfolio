@@ -48,6 +48,7 @@ export default function BudgetTracker(props) {
                 title="MongDB PWA Online and Offline Budget Tracker"
                 image={project7}
                 deployedApp="https://pwa-budget-tracker-eb.herokuapp.com/"
+                target="_blank"
                 repo="https://github.com/E-Burton/PWA-Offline-Online-Budget-Tracker"
             />
           </div>
