@@ -17,18 +17,22 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/edwina.JPG";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
 import work1 from "assets/img/examples/olu-eletu.jpg";
 import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+
+import project1 from "assets/img/projects/password-generator-demo.png";
+import project2 from "assets/img/projects/quiz-demo.gif";
+import project3 from "assets/img/projects/weather-dashboard-demo.gif";
+import project4 from "assets/img/projects/readme-generator.gif";
+import project5 from "assets/img/projects/note-taker-demo.gif";
+import project6 from "assets/img/projects/employee-tracker-demo.gif";
+import project7 from "assets/img/projects/pwa-budget-tracker.png";
+import project8 from "assets/img/projects/react-employee-directory.png";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
@@ -47,7 +51,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit React"
+        brand="Edwina Burton"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -67,16 +71,13 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Edwina Burton</h3>
+                    <h6>WEB DEVELOPER</h6>
                     <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
+                      <i className={"fab fa-github"} />
                     </Button>
                     <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
+                      <i className={"fab fa-linkedin"} />
                     </Button>
                   </div>
                 </div>
@@ -84,118 +85,103 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+              Hello! I'm a Colorado Native who loves fitness competition shows (like Titan Games and American Ninja Warrior) and am obsessed with Tetris. In my free time I enjoy spending time with my partner, going on walks and cycling together, and taking the dogs to the dog park. I value getting things done correctly and efficiently, and believe that consistent learning and growth (no matter how big or small) is key in achieving any aspiration. Keeping this in mind, I view any challenge as an opportunity to hone and improve my skills.
+
+              While purusing my undergraduate degree I was exposed to programming. Initially I didn't like it, but later found appreciation in the puzzle and problem solving features, and the joy that came with finally creating a project that was functioning as intended. After having spent a few years as a forecasting analyst, I realized that I needed to pursue a field that involved more creativity and allowed for constant learning, which is why I made the decision to pursuse the University of Denver's Full Stack Coding Bootcamp. The experience thus far has been great, and I'm excited for what's to come!{" "}
               </p>
             </div>
             <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+              <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Studio",
+                      tabButton: "JavaScript & APIs",
                       tabIcon: Camera,
                       tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio2}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
+                        <React.Fragment>
+                          <GridContainer justify="center"> 
+                            <GridItem xs={6} sm={6} md={6}>
+                              <img
+                                alt="Password Generator"
+                                src={project1}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                          </GridContainer>
+
+                          <GridContainer justify="center">
+                            <GridItem xs={6} sm={6} md={6}>
+                              <img
+                                alt="JavaScript Quiz"
+                                src={project2}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={6} sm={6} md={6}>
+                              <img
+                                alt="Weather Dashboard"
+                                src={project3}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                          </GridContainer>
+                        </React.Fragment>
+                      
                       )
                     },
                     {
-                      tabButton: "Work",
+                      tabButton: "Node, Express & MySQL",
                       tabIcon: Palette,
                       tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
+                        <React.Fragment>
+                          <GridContainer justify="center"> 
+                            <GridItem xs={6} sm={6} md={7}>
+                              <img
+                                alt="Note Taker"
+                                src={project5}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                          </GridContainer>
+
+                          <GridContainer justify="center">
+                            <GridItem xs={6} sm={6} md={6}>
+                              <img
+                                alt="README Generator"
+                                src={project4}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={6} sm={6} md={6}>
+                              <img
+                                alt="Employee Tracker"
+                                src={project6}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
                         </GridContainer>
+                      </React.Fragment>
                       )
                     },
                     {
-                      tabButton: "Favorite",
+                      tabButton: "MongoDB & React",
                       tabIcon: Favorite,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
-                              alt="..."
-                              src={work4}
+                              alt="Budget Tracker"
+                              src={project7}
                               className={navImageClasses}
                             />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
+
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio1}
+                              alt="Employee Directory"
+                              src={project8}
                               className={navImageClasses}
                             />
                           </GridItem>
