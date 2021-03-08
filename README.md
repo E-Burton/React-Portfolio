@@ -9,7 +9,7 @@ Create a portfolio using react featuring at least six projects. Application shou
 * [Objective](#objective)
 * [Tools Implemented](#tools-implemented)
 * [Website Mock-Up](#website-mock-up)
-* [Link to Porfolio](#link-to-portfolio)
+* [Link to Portfolio](#link-to-portfolio)
 * [Credits](#credits)
 
 ## Tools Implemented
@@ -19,9 +19,9 @@ Create a portfolio using react featuring at least six projects. Application shou
 * [Material-UI](https://material-ui.com/)
 * [Icons8](https://icons8.com/icons)
 
-## Website Mock-Up
-
 ## Link to Portfolio
+
+[Click](https://e-burton.github.io/React-Portfolio) to view deployed site!
 
 ## Credits
 
