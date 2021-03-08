@@ -3,10 +3,12 @@ import React from 'react'; // Import the Component component from React
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import { HTML5_FMT } from 'moment';
@@ -34,15 +36,15 @@ export default function ProjectDetails({title, image, deployedApp, repo, target,
             <div className={classes.name}>
               <h3 className={classes.title}>{title}</h3>
               <GridContainer justify="center">
-                <GridItem xs={6} sm={6} md={4}>
-                  <a target={target} href={deployedApp} rel="noreferrer">
+                <GridItem xs={6} sm={6} md={6}>
+                  <Button target={target} href={deployedApp} color="transparent">
                       <h6>DEPLOYED APPLICATION</h6>
-                  </a>
+                  </Button>
                 </GridItem>
                 <GridItem xs={6} sm={6} md={4}>
-                  <a target="_blank" href={repo} rel="noreferrer">
+                  <Button target="_blank" href={repo}>
                     <h6>PROJECT REPOSITORY</h6>
-                  </a>
+                  </Button>
                 </GridItem>
               </GridContainer>
             </div>
