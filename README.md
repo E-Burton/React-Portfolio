@@ -15,7 +15,7 @@ Create a portfolio using react featuring at least six projects. Application shou
 ## Tools Implemented
 
 * JavScript & JSX
-* React.js
+* React.js & [`react-router-dom`](https://www.npmjs.com/package/react-router-dom)
 * [Material-UI](https://material-ui.com/)
 
 ## Website Mock-Up
@@ -23,3 +23,7 @@ Create a portfolio using react featuring at least six projects. Application shou
 ## Link to Portfolio
 
 ## Credits
+
+* [Building Your Portfolio with React](https://www.framer.com/blog/posts/react-portfolio/)
+* [Loop Over and Display Data with JSX](https://scotch.io/courses/10-react-challenges-beginner/loop-over-and-display-data-with-jsx#:~:text=Loop%20Over%20the%20Array,-.&text=Components%20in%20JSX%20are%20JS,JSX%20handlebars%2Dlike%20curly%20brackets.)
+
