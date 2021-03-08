@@ -42,20 +42,10 @@ export default function Footer(props) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
+                href="/profile-page"
                 className={classes.block}
-                target="_blank"
               >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
+                About
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -70,16 +60,15 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()} 
+          {/* , made with{" "} */}
+          {/* <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
+            href="/profile-page"
             className={aClasses}
-            target="_blank"
           >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+            Edwina Burton
+          </a>{" "} */}
         </div>
       </div>
     </footer>

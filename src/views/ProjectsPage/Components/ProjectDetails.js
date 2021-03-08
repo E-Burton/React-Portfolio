@@ -13,7 +13,7 @@ import { HTML5_FMT } from 'moment';
 
 const useStyles = makeStyles(styles);
 
-export default function ProjectDetails({title, image, deployedApp, repo}) {
+export default function ProjectDetails({title, image, deployedApp, repo, description}) {
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -52,7 +52,7 @@ export default function ProjectDetails({title, image, deployedApp, repo}) {
 
       <div className={classes.description}>
         <p>
-        Project Description{" "}
+        {description}{" "}
         </p>
       </div>
 
