@@ -29,7 +29,7 @@
     },
     {
       "id": 5,
-      "title": "Note Taker",
+      "title": "Express Note Taker",
       "image": "./images/note-taker-demo.gif",
       "deployedApp": "https://express-js-note-taker-e.herokuapp.com/",
       "repo": "https://github.com/E-Burton/Express.js-Note-Taker"
@@ -43,7 +43,7 @@
     },
     {
       "id": 7,
-      "title": "PWA Online & Offline Budget Tracker",
+      "title": "MongDB PWA Online & Offline Budget Tracker",
       "image": "https://placeimg.com/640/480/nature?t=1615181702731",
       "deployedApp": "https://pwa-budget-tracker-eb.herokuapp.com/",
       "repo": "https://github.com/E-Burton/PWA-Offline-Online-Budget-Tracker"

@@ -36,16 +36,30 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
+            <Link to="/password-generator" className={classes.dropdownLink}>
+              Password Generator
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
+            <Link to="/javascript-quiz" className={classes.dropdownLink}>
+              JavaScript Quiz
+            </Link>,
+            <Link to="/weather-dashboard" className={classes.dropdownLink}>
+              Weather Dashboard
+            </Link>,
+            <Link to="/note-taker" className={classes.dropdownLink}>
+              Note Taker
+            </Link>,
+            <Link to="/readme-generator" className={classes.dropdownLink}>
+              README Generator
+            </Link>,
+            <Link to="/employee-tracker" className={classes.dropdownLink}>
+              Employee Tracker
+            </Link>,
+            <Link to="/budget-tracker" className={classes.dropdownLink}>
+              Budget Tracker
+            </Link>,
+            <Link to="/employee-directory" className={classes.dropdownLink}>
+              Employee Directory
+            </Link>
           ]}
         />
       </ListItem>

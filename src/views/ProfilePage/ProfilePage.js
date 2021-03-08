@@ -7,6 +7,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
+
+// icon8 icons
+import jsIcon from "assets/img/icons8-javascript-64.png";
+import nodeIcon from "assets/img/icons8-nodejs-48.png";
+import reactIcon from "assets/img/icons8-react-native-64.png";
+
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -18,12 +24,6 @@ import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/faces/edwina.JPG";
-
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
 
 import project1 from "assets/img/projects/password-generator-demo.png";
 import project2 from "assets/img/projects/quiz-demo.gif";
@@ -60,7 +60,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+      <Parallax small filter image={require("assets/img/landing-bg.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -73,12 +73,6 @@ export default function ProfilePage(props) {
                   <div className={classes.name}>
                     <h3 className={classes.title}>Edwina Burton</h3>
                     <h6>WEB DEVELOPER</h6>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-github"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-linkedin"} />
-                    </Button>
                   </div>
                 </div>
               </GridItem>

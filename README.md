@@ -17,6 +17,7 @@ Create a portfolio using react featuring at least six projects. Application shou
 * JavScript & JSX
 * React.js & [`react-router-dom`](https://www.npmjs.com/package/react-router-dom)
 * [Material-UI](https://material-ui.com/)
+* [Icons8](https://icons8.com/icons)
 
 ## Website Mock-Up
 
