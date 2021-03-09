@@ -63,14 +63,17 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="/contact-page"
-          color="transparent"
-          className={classes.navLink}
-        >
-          Contact
-        </Button>
+      <ListItem className={classes.listItem} >
+        {/* <Link to="/contact-page" className={classes.title} > */}
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            to="/contact-page"
+            component={Link}
+          >
+            Contact
+          </Button>
+        {/* </Link> */}
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
