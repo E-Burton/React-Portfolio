@@ -33,7 +33,7 @@ export default function Footer(props) {
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
+            {/* <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.creative-tim.com/?ref=mkr-footer"
                 className={classes.block}
@@ -41,7 +41,7 @@ export default function Footer(props) {
               >
                 Creative Tim
               </a>
-            </ListItem>
+            </ListItem> */}
             <ListItem className={classes.inlineBlock}>
               {/* <a
                 href="/profile-page"

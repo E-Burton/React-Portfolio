@@ -68,6 +68,20 @@ export default function HeaderLinks(props) {
           <Button
             color="transparent"
             className={classes.navLink}
+            // to="/contact-page"
+            to="/resume-page"
+            component={Link}
+          >
+            Resume
+          </Button>
+        {/* </Link> */}
+      </ListItem>
+      <ListItem className={classes.listItem} >
+        {/* <Link to="/contact-page" className={classes.title} > */}
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            // to="/contact-page"
             to="/contact-page"
             component={Link}
           >

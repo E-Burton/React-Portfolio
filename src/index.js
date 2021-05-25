@@ -10,6 +10,7 @@ import "assets/scss/material-kit-react.scss?v=1.9.0";
 import Components from "views/Components/Components.js";
 import LandingPage from "views/LandingPage/LandingPage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
+import ResumePage from "views/ResumePage/ResumePage.js";
 
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import ContactPage from "views/ContactPage/ContactPage.js";
@@ -39,6 +40,7 @@ ReactDOM.render(
       <Route path="/readme-generator" component={READMEGenerator} />
       <Route path="/weather-dashboard" component={WeatherDashboard} />
       <Route path="/contact-page" component={ContactPage} />
+      <Route path="/resume-page" component={ResumePage} />
       <Route exact path="/" component={ProfilePage} />
     </Switch>
   </Router>,
