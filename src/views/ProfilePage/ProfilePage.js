@@ -2,12 +2,28 @@ import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { jssPreset, makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
 
 // DevIcons
 import DevIcon from 'devicon-react-svg';
+import html5 from "assets/devicons/html5/html5-plain-wordmark.svg";
+import css3 from "assets/devicons/css3/css3-plain-wordmark.svg";
+import js from "assets/devicons/javascript/javascript-original.svg";
+import mongo from "assets/devicons/mongodb/mongodb-plain-wordmark.svg"
+import mysql from "assets/devicons/mysql/mysql-original-wordmark.svg";
+import bootstrap from "assets/devicons/bootstrap/bootstrap-plain-wordmark.svg";
+import express from "assets/devicons/express/express-original-wordmark.svg";
+import handlebars from "assets/devicons/handlebars/handlebars-original-wordmark.svg";
+import jquery from "assets/devicons/jquery/jquery-plain-wordmark.svg";
+import material from "assets/devicons/materialui/materialui-original.svg"
+import node from "assets/devicons/nodejs/nodejs-plain-wordmark.svg";
+import REACT from "assets/devicons/react/react-original-wordmark.svg";
+import git from "assets/devicons/github/github-original-wordmark.svg";
+import heroku from "assets/devicons/heroku/heroku-original-wordmark.svg";
+import npm from "assets/devicons/npm/npm-original-wordmark.svg";
+import vscode from "assets/devicons/visualstudio/visualstudio-plain-wordmark.svg";
 
 // core components
 import Header from "components/Header/Header.js";
@@ -20,8 +36,8 @@ import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/faces/edwina.JPG";
-
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import { GitHub } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -78,84 +94,159 @@ export default function ProfilePage(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Skills",
+                      tabButton: "Technologies",
                       tabIcon: Camera,
                       tabContent: (
                         <React.Fragment>
                           <GridContainer justify="center"> 
-                            <GridItem xs={6} sm={6} md={6}>
-                              
-
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="HTML5"
+                                src={html5}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="CSS3"
+                                src={css3}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="JavaScript"
+                                src={js}
+                                className={navImageClasses}
+                              />
                             </GridItem>
                           </GridContainer>
-
-                          <GridContainer justify="center">
-
-                          </GridContainer>
                         </React.Fragment>
-                      
                       )
                     },
-                    // {
-                    //   tabButton: "Resume",
-                    //   tabIcon: Palette,
-                    //   tabContent: (
-                    //     <React.Fragment>
-                    //       <GridContainer justify="center"> 
-                    //         {/* <GridItem xs={10} sm={10} md={10}> */}
-                    //           <object
-                    //             alt="Resume"
-                    //             data={resume}
-                    //             type="application/pdf"
-                    //             width="100%"
-                    //             height="1000px"
-                    //             // className={navImageClasses}
-                    //           />
-                    //         {/* </GridItem> */}
-                    //       </GridContainer>
-
-                    //       {/* <GridContainer justify="center">
-                    //         <GridItem xs={6} sm={6} md={6}>
-                    //           <img
-                    //             alt="README Generator"
-                    //             src={project4}
-                    //             className={navImageClasses}
-                    //           />
-                    //         </GridItem>
-                    //         <GridItem xs={6} sm={6} md={6}>
-                    //           <img
-                    //             alt="Employee Tracker"
-                    //             src={project6}
-                    //             className={navImageClasses}
-                    //           />
-                    //         </GridItem>
-                    //     </GridContainer> */}
-                    //   </React.Fragment>
-                    //   )
-                    // },
-                    // {
-                    //   tabButton: "Contact",
-                    //   tabIcon: Favorite,
-                    //   tabContent: (
-                    //     <GridContainer justify="center">
-                    //       <GridItem xs={12} sm={12} md={6}>
-                    //         <img
-                    //           alt="Budget Tracker"
-                    //           src={project7}
-                    //           className={navImageClasses}
-                    //         />
-
-                    //       </GridItem>
-                    //       <GridItem xs={12} sm={12} md={6}>
-                    //         <img
-                    //           alt="Employee Directory"
-                    //           src={project8}
-                    //           className={navImageClasses}
-                    //         />
-                    //       </GridItem>
-                    //     </GridContainer>
-                    //   )
-                    // }
+                    {
+                      tabButton: "Databases",
+                      tabIcon: Camera,
+                      tabContent: (
+                        <React.Fragment>
+                          <GridContainer justify="center"> 
+                            <GridItem xs={2} sm={2} md={2}>
+                                <img
+                                  alt="MongoDB"
+                                  src={mongo}
+                                  className={navImageClasses}
+                                />
+                              </GridItem>
+                              <GridItem xs={2} sm={2} md={2}>
+                                <img
+                                  alt="MySQL"
+                                  src={mysql}
+                                  className={navImageClasses}
+                                />
+                              </GridItem>
+                          </GridContainer>
+                      </React.Fragment>
+                      )
+                    },
+                    {
+                      tabButton: "Libraries & Frameworks",
+                      tabIcon: Camera,
+                      tabContent: (
+                        <React.Fragment>
+                          <GridContainer justify="center"> 
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="Bootstrap"
+                                src={bootstrap}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="ExpresJS"
+                                src={express}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="Handlebars"
+                                src={handlebars}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="jQuery"
+                                src={jquery}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                          </GridContainer>
+                          <GridContainer justify="center"> 
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="Materialize"
+                                src={material}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="NodeJS"
+                                src={node}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="React"
+                                src={REACT}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                          </GridContainer>
+                        </React.Fragment>
+                      )
+                    },
+                    {
+                      tabButton: "Tools",
+                      tabIcon: Camera,
+                      tabContent: (
+                        <React.Fragment>
+                          <GridContainer justify="center"> 
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="GitHub"
+                                src={git}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="Heroku"
+                                src={heroku}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="NPM"
+                                src={npm}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={2} sm={2} md={2}>
+                              <img
+                                alt="Visual Studio Code"
+                                src={vscode}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                          </GridContainer>
+                        </React.Fragment>
+                      )
+                    },
                   ]}
                 />
               </GridItem>
