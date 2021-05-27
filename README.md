@@ -18,6 +18,8 @@ Create a portfolio using react featuring at least six projects. Application shou
 * React.js & [`react-router-dom`](https://www.npmjs.com/package/react-router-dom)
 * [Material-UI](https://material-ui.com/)
 * [Icons8](https://icons8.com/icons)
+* [`devicon-react-svg npm`](https://www.npmjs.com/package/devicon-react-svg)
+* [`react-pdf npm`](https://www.npmjs.com/package/react-pdf)
 
 ## Link to Portfolio
 

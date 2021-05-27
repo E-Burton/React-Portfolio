@@ -5,13 +5,9 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
 
-// icon8 icons
-import jsIcon from "assets/img/icons8-javascript-64.png";
-import nodeIcon from "assets/img/icons8-nodejs-48.png";
-import reactIcon from "assets/img/icons8-react-native-64.png";
+// DevIcons
+import DevIcon from 'devicon-react-svg';
 
 // core components
 import Header from "components/Header/Header.js";
@@ -24,15 +20,6 @@ import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/faces/edwina.JPG";
-
-import project1 from "assets/img/projects/password-generator-demo.png";
-import project2 from "assets/img/projects/quiz-demo.gif";
-import project3 from "assets/img/projects/weather-dashboard-demo.gif";
-import project4 from "assets/img/projects/readme-generator.gif";
-import project5 from "assets/img/projects/note-taker-demo.gif";
-import project6 from "assets/img/projects/employee-tracker-demo.gif";
-import project7 from "assets/img/projects/pwa-budget-tracker.png";
-import project8 from "assets/img/projects/react-employee-directory.png";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
@@ -97,29 +84,13 @@ export default function ProfilePage(props) {
                         <React.Fragment>
                           <GridContainer justify="center"> 
                             <GridItem xs={6} sm={6} md={6}>
-                              <img
-                                alt="Password Generator"
-                                src={project1}
-                                className={navImageClasses}
-                              />
+                              
+
                             </GridItem>
                           </GridContainer>
 
                           <GridContainer justify="center">
-                            <GridItem xs={6} sm={6} md={6}>
-                              <img
-                                alt="JavaScript Quiz"
-                                src={project2}
-                                className={navImageClasses}
-                              />
-                            </GridItem>
-                            <GridItem xs={6} sm={6} md={6}>
-                              <img
-                                alt="Weather Dashboard"
-                                src={project3}
-                                className={navImageClasses}
-                              />
-                            </GridItem>
+
                           </GridContainer>
                         </React.Fragment>
                       
