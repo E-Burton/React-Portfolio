@@ -6,6 +6,10 @@ import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -22,6 +26,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "assets/img/bg7.jpg";
+import { LinkedIn, VerticalAlignTop } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -51,13 +56,22 @@ export default function LoginPage(props) {
       >
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem cs={12} sm={12} md={8}>
+            <GridItem cs={8} sm={12} md={8} style={{ textAlign: "center" }}>
                 <h2 className={classes.title}>Work with Me</h2>
                 <h4 className={classes.description}>
-                    Write a few lines about your project need and contact me about any further
-                    collaboration. I will respond within 48hrs.
+                    Have a question or like what you see? Write a few lines about your project need and contact me about any further
+                    collaboration. Feel free to call, email or connect on LinkedIn (in the link in the above)!
                 </h4>
-            <form>
+                <GridItem >
+                  <PhoneIcon style={{ display: "inline-grid", verticalAlign: "bottom"}} /> 
+                  <h4 style={{ paddingLeft: 15, paddingRight: 35, display: "inline", verticalAlign: "top"}}> 303.941.0018</h4>
+                  <EmailIcon style={{ display: "inline-grid", verticalAlign: "bottom"}} /> 
+                  <h4 style={{ paddingLeft: 15, display: "inline", verticalAlign: "top"}}> edwina.antoinette@gmaili.com </h4>
+                </GridItem>
+                <GridItem>
+                  
+                </GridItem>
+            {/* <form>
                 <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                     <CustomInput
@@ -93,7 +107,7 @@ export default function LoginPage(props) {
                     <Button color="primary">Send Message</Button>
                 </GridItem>
                 </GridContainer>
-            </form>
+            </form> */}
             </GridItem>
           </GridContainer>
         </div>
