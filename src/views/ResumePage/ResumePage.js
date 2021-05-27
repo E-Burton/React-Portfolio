@@ -17,8 +17,7 @@ import profile from "assets/img/faces/edwina.JPG";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 // react pdf & support for annotations 
-import { Document, Page, pdfjs, StyleSheet, View } from "react-pdf";
-// import { Text, View, StyleSheet } from "@react-pdf/renderer";
+import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'; // using ES6 modules
 import 'react-pdf/dist/umd/Page/AnnotationLayer.css'; // using CommonJS modules
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -96,7 +95,11 @@ export default function ProfilePage(props) {
                       options={{ workerSrc: "pdf.worker.js"}}
                       onLoadSuccess={onDocumentLoadSuccess}
                     >
-                      <Page pageNumber={pageNumber} width={useWindowDimensions().width*0.65} />
+                      <Page pageNumber={pageNumber} width={useWindowDimensions().width*0.65} textAlign="Center"> 
+                        <GridContainer justify="center">
+                            <h3 className={classes.title} marginBottom={250}> <a href={resume} download="RESUME BURTON_EDWINA" style={{ fontFamily: 'Exo, sans-serif', color: '#073763', fontWeight: 1000 }}> Download Now! </a> </h3>
+                        </GridContainer>
+                      </Page>
                     </Document>
             </GridContainer>
           </div>

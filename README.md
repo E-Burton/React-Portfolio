@@ -35,4 +35,5 @@ Create a portfolio using react featuring at least six projects. Application shou
 * [Displaying PDF in React App](https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9)
 * [Code Sand Box - Displaying PDF Using React](https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9)
 * [Get Window Width on Resize](https://www.codegrepper.com/code-examples/javascript/react+get+window+width+on+resize)
+* [HTML a-tag Download Attribute](https://www.w3schools.com/tags/att_a_download.asp)
 
