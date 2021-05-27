@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -12,11 +12,16 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js"
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/faces/edwina.JPG";
-
 import resume from "assets/documents/Resume.pdf";
-
+import profile from "assets/img/faces/edwina.JPG";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+
+// react pdf & support for annotations 
+// import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css'; // using ES6 modules
+import 'react-pdf/dist/umd/Page/AnnotationLayer.css'; // using CommonJS modules
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const useStyles = makeStyles(styles);
 
@@ -28,6 +33,15 @@ export default function ProfilePage(props) {
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPageNumber(1);
+  }
+
   const resumestyle = {
     height: "900px",
     width: "100%",
@@ -67,7 +81,7 @@ export default function ProfilePage(props) {
                     {/* <a href={resume} target="_blank">View Resume</a> */}
                   </div>
                 </GridItem>
-                <GridItem xs={12} style={resumestyle}>
+                {/* <GridItem xs={12} style={resumestyle}>
                   <div style={resumestyle}>
                     <iframe
                       alt="Resume"
@@ -75,6 +89,18 @@ export default function ProfilePage(props) {
                       frameboarder="0"
                       style={iframestyle}
                     />
+                  </div>
+                </GridItem> */}
+                <GridItem xs={12}>
+                  <div>
+                    <Document
+                      file={resume}
+                      options={{ workerSrc: "pdf.worker.js"}}
+                      onLoadSuccess={onDocumentLoadSuccess}
+                    >
+                      <Page pageNumber={pageNumber} />
+                    </Document>
+                    <p> Page {pageNumber} of {numPages} </p>
                   </div>
                 </GridItem>
             </GridContainer>
