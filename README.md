@@ -34,4 +34,5 @@ Create a portfolio using react featuring at least six projects. Application shou
 * [Changing Color of Link from React-Dom-Router](https://stackoverflow.com/questions/37843495/material-ui-adding-link-component-from-react-router)
 * [Displaying PDF in React App](https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9)
 * [Code Sand Box - Displaying PDF Using React](https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9)
+* [Get Window Width on Resize](https://www.codegrepper.com/code-examples/javascript/react+get+window+width+on+resize)
 
