@@ -4,7 +4,10 @@ import classNames from "classnames";
 // @material-ui/core components
 import { jssPreset, makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
+import ComputerIcon from '@material-ui/icons/Computer';
+import StorageIcon from '@material-ui/icons/Storage';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import BuildIcon from '@material-ui/icons/Build';
 
 // DevIcons
 import DevIcon from 'devicon-react-svg';
@@ -38,6 +41,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import profile from "assets/img/faces/edwina.JPG";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import { GitHub } from "@material-ui/icons";
+import { grayColor } from "assets/jss/material-kit-react";
 
 const useStyles = makeStyles(styles);
 
@@ -86,6 +90,7 @@ export default function ProfilePage(props) {
 
               While pursuing my undergraduate degree I was exposed to programming. Initially I didn't like it, but later found appreciation in the puzzle and problem solving features, and the joy that came with finally creating a project that was functioning as intended. After having spent a few years as a forecasting analyst, I realized that I needed to pursue a field that involved more creativity and allowed for constant learning, which is why I made the decision to pursue the University of Denver's Full Stack Coding Bootcamp. The experience thus far has been great, and I'm excited for what's to come!{" "}
               </p>
+              <h4 className={classes.title} style={{ borderBottom: "3px solid #3C4858", width: "85%" }}> SKILLS </h4>
             </div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
@@ -95,7 +100,7 @@ export default function ProfilePage(props) {
                   tabs={[
                     {
                       tabButton: "Technologies",
-                      tabIcon: Camera,
+                      tabIcon: ComputerIcon,
                       tabContent: (
                         <React.Fragment>
                           <GridContainer justify="center"> 
@@ -117,7 +122,8 @@ export default function ProfilePage(props) {
                               <img
                                 alt="JavaScript"
                                 src={js}
-                                className={navImageClasses}
+                                // className={navImageClasses}
+                                style={{ borderRadius: "25%"}}
                               />
                             </GridItem>
                           </GridContainer>
@@ -126,7 +132,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Databases",
-                      tabIcon: Camera,
+                      tabIcon: StorageIcon,
                       tabContent: (
                         <React.Fragment>
                           <GridContainer justify="center"> 
@@ -150,7 +156,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Libraries & Frameworks",
-                      tabIcon: Camera,
+                      tabIcon: MenuBookIcon,
                       tabContent: (
                         <React.Fragment>
                           <GridContainer justify="center"> 
@@ -211,7 +217,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Tools",
-                      tabIcon: Camera,
+                      tabIcon: BuildIcon,
                       tabContent: (
                         <React.Fragment>
                           <GridContainer justify="center"> 
