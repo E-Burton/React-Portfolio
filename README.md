@@ -23,7 +23,9 @@ Create a portfolio using react featuring at least six projects. Application shou
 
 ## Link to Portfolio
 
-[Click](https://e-burton.github.io/React-Portfolio) to view deployed site!
+![Porfolio](./src/assets/img/portfolio.gif)
+
+[Click](https://e-burton.github.io/React-Portfolio) to view website!
 
 ## Credits
 
