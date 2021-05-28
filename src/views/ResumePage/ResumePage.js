@@ -4,6 +4,9 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+// @material-ui/icons
+import GetAppIcon from '@material-ui/icons/GetApp';
+
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -97,7 +100,7 @@ export default function ProfilePage(props) {
                     >
                       <Page pageNumber={pageNumber} width={useWindowDimensions().width*0.65} textAlign="Center"> 
                         <GridContainer justify="center">
-                            <h3 className={classes.title} marginBottom={250}> <a href={resume} download="RESUME BURTON_EDWINA" style={{ fontFamily: 'Exo, sans-serif', color: '#073763', fontWeight: 1000 }}> Download Now! </a> </h3>
+                            <h3 className={classes.title} marginBottom={250}> <a href={resume} download="RESUME BURTON_EDWINA" style={{ fontFamily: 'Exo, sans-serif', color: '#073763', fontWeight: 1000 }}> Download <GetAppIcon fontSize="large" style={{ verticalAlign: "bottom" }}/> </a> </h3>
                         </GridContainer>
                       </Page>
                     </Document>

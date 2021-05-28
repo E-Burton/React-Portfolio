@@ -79,13 +79,13 @@ export default function ProfilePage(props) {
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Edwina Burton</h3>
-                    <h6>WEB DEVELOPER</h6>
+                    <h5 style={{ fontWeight: "bold" }}>WEB DEVELOPER</h5>
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>
+              <p style={{ fontSize: 18 }} >
               Hello! I'm a Colorado Native who loves fitness competition shows (like Titan Games and American Ninja Warrior) and am obsessed with Tetris. In my free time I enjoy spending time with my partner, going on walks, cycling, and taking the dogs to the dog park. I value getting things done correctly and efficiently, and believe that consistent learning and growth (no matter how big or small) is key in achieving any aspiration. Keeping this in mind, I view any challenge as an opportunity to hone and improve my skills.
 
               While pursuing my undergraduate degree I was exposed to programming. Initially I didn't like it, but later found appreciation in the puzzle and problem solving features, and the joy that came with finally creating a project that was functioning as intended. After having spent a few years as a forecasting analyst, I realized that I needed to pursue a field that involved more creativity and allowed for constant learning, which is why I made the decision to pursue the University of Denver's Full Stack Coding Bootcamp. The experience thus far has been great, and I'm excited for what's to come!{" "}

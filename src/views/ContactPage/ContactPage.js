@@ -51,12 +51,12 @@ export default function LoginPage(props) {
         style={{
           backgroundImage: "url(" + image + ")",
           backgroundSize: "cover",
-          backgroundPosition: "top center"
+          backgroundPosition: "top center",
         }}
       >
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem cs={8} sm={12} md={8} style={{ textAlign: "center" }}>
+            <GridItem cs={8} sm={12} md={8} style={{ textAlign: "center", borderColor: "2px solid white", backgroundColor: "black", opacity: 0.8,  paddingBottom: "22px"}}>
                 <h2 className={classes.title}>Work with Me</h2>
                 <h4 className={classes.description}>
                     Have a question or like what you see? Write a few lines about your project need and contact me about any further
@@ -64,9 +64,9 @@ export default function LoginPage(props) {
                 </h4>
                 <GridItem >
                   <PhoneIcon style={{ display: "inline-grid", verticalAlign: "bottom"}} /> 
-                  <h4 style={{ paddingLeft: 15, paddingRight: 35, display: "inline", verticalAlign: "top"}}> 303.941.0018</h4>
+                  <a href="tel: 3039410018" color="white"> <h4 style={{ paddingLeft: 15, paddingRight: 35, display: "inline", verticalAlign: "top"}}> 303.941.0018</h4> </a>
                   <EmailIcon style={{ display: "inline-grid", verticalAlign: "bottom"}} /> 
-                  <h4 style={{ paddingLeft: 15, display: "inline", verticalAlign: "top"}}> edwina.antoinette@gmaili.com </h4>
+                  <a href="mailto: edwina.antoinette@gmail.com" target="_blank" color="white"> <h4 style={{ paddingLeft: 15, display: "inline", verticalAlign: "top"}}> edwina.antoinette@gmaili.com </h4> </a>
                 </GridItem>
                 <GridItem>
                   
