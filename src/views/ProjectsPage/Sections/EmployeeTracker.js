@@ -46,8 +46,10 @@ export default function EmployeeTracker(props) {
             <ProjectDetails 
                 title="MySQL Employee Tracker"
                 image={project6}
-                deployedApp="#"
+                appDemo="https://drive.google.com/file/d/1QF0uVy49M06UWILa5vYRsnfwy0gYv-YD/view?usp=sharing"
                 repo="https://github.com/E-Burton/MySQL-Employee-Tracker"
+                description="Employee Tracker Content Management System (CMS), that allows user to view and add employees, departments, and roles."
+                technologies="JavaScript, NodeJS, InquirerJS, MySQL, NPM"
             />
           </div>
         </div>

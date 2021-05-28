@@ -46,8 +46,10 @@ export default function READMEGenerator(props) {
             <ProjectDetails 
                 title="README Generator"
                 image={project4}
-                deployedApp="#"
+                appDemo="https://drive.google.com/file/d/1A8yzQdeZR5FBTlncz1T9VboOQKDs9bpT/view?usp=sharing"
                 repo="https://github.com/E-Burton/Professional-README-File-Generator-Node.JS"
+                description="A command-line application that dynamically generates a professional README.md file from a user's input."
+                technologies="JavaScript, NodeJS, InquirerJS"
             />
           </div>
         </div>

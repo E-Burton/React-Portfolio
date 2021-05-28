@@ -85,10 +85,11 @@ export default function ProfilePage(props) {
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p style={{ fontSize: 18 }} >
-              Hello! I'm a Colorado Native who loves fitness competition shows (like Titan Games and American Ninja Warrior) and am obsessed with Tetris. In my free time I enjoy spending time with my partner, going on walks, cycling, and taking the dogs to the dog park. I value getting things done correctly and efficiently, and believe that consistent learning and growth (no matter how big or small) is key in achieving any aspiration. Keeping this in mind, I view any challenge as an opportunity to hone and improve my skills.
-
-              While pursuing my undergraduate degree I was exposed to programming. Initially I didn't like it, but later found appreciation in the puzzle and problem solving features, and the joy that came with finally creating a project that was functioning as intended. After having spent a few years as a forecasting analyst, I realized that I needed to pursue a field that involved more creativity and allowed for constant learning, which is why I made the decision to pursue the University of Denver's Full Stack Coding Bootcamp. The experience thus far has been great, and I'm excited for what's to come!{" "}
+              <p style={{ color: "#212121", fontSize: 16 }} >
+              Hello! I'm a Colorado Native with a strong background in Mathematics, who loves fitness competition shows (like Titan Games and American Ninja Warrior), is obsessed with Tetris and enjoys getting out and active in nature. In March 2021, I completed the University of Denver's Coding Certification Bootcamp, where I learned key skills for responsive front end and back end development. I value getting things done correctly and efficiently, and believe that consistent learning and growth (no matter how big or small) is key in achieving any aspiration. Keeping this in mind, I view any challenge as an opportunity to expand my perspective and enhance my skills.
+              <br/>
+              <br/>
+               After having spent several years as a forecasting analyst, I realized that I needed to pursue a field that involved more creativity and allowed for constant learning. While it may be overwhelming to think about how many technologies exist, I love the fact that I have an abundance of resources to learn anything I wish, in order to further develop the skills I've gained and be a value asset for any project.{" "}
               </p>
               <h4 className={classes.title} style={{ borderBottom: "3px solid #3C4858", width: "85%" }}> SKILLS </h4>
             </div>

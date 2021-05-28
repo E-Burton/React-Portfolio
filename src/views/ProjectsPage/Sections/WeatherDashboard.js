@@ -46,8 +46,10 @@ export default function WeatherDashboard(props) {
             <ProjectDetails 
                 title="Weather Dashboard"
                 image={project3}
-                deployedApp="#"
+                appDemo={null}
                 repo="https://github.com/E-Burton/Weather-Dashboard-Server-Side-APIs"
+                description="Dashboard that runs in the broswer and retreives current weather outlook (including Wind Speed and UV Index) and the 5-day forecast for multiple cities."
+                technologies="JavaScript, HTML, CSS, Bootstrap, jQuery, OpenWeather API"
             />
           </div>
         </div>

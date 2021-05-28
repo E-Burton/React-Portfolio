@@ -46,9 +46,10 @@ export default function EmployeeDirectory(props) {
             <ProjectDetails 
                 title="React Employee Directory"
                 image={project8}
-                deployedApp="https://e-burton.github.io/React-Employee-Directory/"
-                target="_blank"
+                appDemo="https://e-burton.github.io/React-Employee-Directory/"
                 repo="https://github.com/E-Burton/React-Employee-Directory"
+                description="Used React and Random User API to build an employee directory that allows filtering or sorting by category."
+                technologies="JavaScript, HTML, CSS, React, Material-UI, NPM"
             />
           </div>
         </div>

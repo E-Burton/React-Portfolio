@@ -15,7 +15,19 @@ import { HTML5_FMT } from 'moment';
 
 const useStyles = makeStyles(styles);
 
-export default function ProjectDetails({title, image, deployedApp, repo, target, description}) {
+export default function ProjectDetails({title, image, appDemo, repo, description, technologies}) {
+
+  let button;
+
+  if (appDemo !== null) {
+    button = (
+      <GridItem xs={4} justifyContent="right">
+        <Button target="_blank" href={appDemo} color="transparent">
+          <p style={{color: "#212121", fontSize: 14}} > APPLICATION DEMO{" "}</p>
+        </Button>
+      </GridItem>)
+  }
+
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -25,6 +37,7 @@ export default function ProjectDetails({title, image, deployedApp, repo, target,
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div className="project">
+
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={6}>
           <div className={classes.profile}>
@@ -36,14 +49,26 @@ export default function ProjectDetails({title, image, deployedApp, repo, target,
             <div className={classes.name}>
               <h3 className={classes.title}>{title}</h3>
               <GridContainer justify="center">
-                <GridItem xs={6} sm={6} md={6}>
+
+                <div className={classes.description}>
+                  <p style={{color: "#212121", fontSize: 17}}>
+                    {description}{" "}
+                  </p>
+                  <p style={{color: "#212121", fontSize: 17}}>
+                    <b> <u> Technologies:</u></b> {technologies}{" "}
+                  </p>
+                </div>
+
+                {button}
+
+                {/* <GridItem xs={5} justifyContent="right">
                   <Button target={target} href={deployedApp} color="transparent">
-                      <h6>DEPLOYED APPLICATION</h6>
+                      <p style={{color: "#212121", fontSize: 14}} > DEPLOYED APPLICATION{" "}</p>
                   </Button>
-                </GridItem>
-                <GridItem xs={6} sm={6} md={4}>
+                </GridItem> */}
+                <GridItem  xs={5} justifyContent="left">
                   <Button target="_blank" href={repo}>
-                    <h6>PROJECT REPOSITORY</h6>
+                    <p style={{color: "#212121", fontSize: 14}} >PROJECT REPOSITORY</p>
                   </Button>
                 </GridItem>
               </GridContainer>
@@ -52,11 +77,7 @@ export default function ProjectDetails({title, image, deployedApp, repo, target,
         </GridItem>
       </GridContainer>
 
-      <div className={classes.description}>
-        <p>
-        {description}{" "}
-        </p>
-      </div>
+      
 
       <GridContainer justify="center"> 
         <GridItem xs={12} sm={12} md={8}>

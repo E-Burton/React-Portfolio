@@ -43,7 +43,7 @@ export default function HeaderLinks(props) {
               JavaScript Quiz
             </Link>,
             <Link to="/weather-dashboard" className={classes.dropdownLink}>
-              Weather Dashboard
+              Weather Dashboard 
             </Link>,
             <Link to="/note-taker" className={classes.dropdownLink}>
               Note Taker

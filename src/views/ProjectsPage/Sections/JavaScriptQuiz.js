@@ -46,8 +46,10 @@ export default function JavaScriptQuiz(props) {
             <ProjectDetails 
                 title="JavaScript Quiz"
                 image={project2}
-                deployedApp="#"
+                appDemo={null}
                 repo="https://github.com/E-Burton/Code-Quiz-Web-API"
+                description="A responsive multiple-choice JavaScript timed coding quiz which stores user high scores."
+                technologies="JavaScript, HTML, CSS, Bootstrap"
             />
           </div>
         </div>

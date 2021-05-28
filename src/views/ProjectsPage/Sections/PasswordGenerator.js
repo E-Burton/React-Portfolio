@@ -46,8 +46,10 @@ export default function PasswordGenerator(props) {
             <ProjectDetails 
                 title="Password Generator"
                 image={project1}
-                deployedApp="#"
+                appDemo={null}
                 repo="https://github.com/E-Burton/Password-Generator-JavaScript"
+                description="JavaScript powered application that generates a random password based on user criteria selected."
+                technologies="HTML, CSS, JavaScript"
             />
           </div>
         </div>
