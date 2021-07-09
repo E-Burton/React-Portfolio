@@ -68,7 +68,7 @@ export default function PasswordGenerator(props) {
             <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
               <NavPills
                 alignCenter
-                color="rose"
+                color="primary"
                 // horizontal={{
                 //   tabsGrid: { xs: 12, sm: 1, md: 1 },
                 //   contentGrid: { xs: 12, sm: 11, md: 11 }
