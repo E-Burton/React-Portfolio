@@ -10,6 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
+import Divider from "@material-ui/core/Divider";
+import Typography from '@material-ui/core/Typography';
 
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
@@ -36,15 +38,21 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/password-generator" className={classes.dropdownLink}>
-              Password Generator
+            <Link to="/front-end" className={classes.dropdownLink}>
+              Front-End
             </Link>,
-            <Link to="/javascript-quiz" className={classes.dropdownLink}>
-              JavaScript Quiz
-            </Link>,
-            <Link to="/weather-dashboard" className={classes.dropdownLink}>
-              Weather Dashboard 
-            </Link>,
+            // <Link to="/password-generator" className={classes.dropdownLink}>
+            //   Password Generator
+            // </Link>,
+            // <Link to="/javascript-quiz" className={classes.dropdownLink}>
+            //   JavaScript Quiz
+            // </Link>,
+            // <Link to="/weather-dashboard" className={classes.dropdownLink}>
+            //   Weather Dashboard 
+            // </Link>,
+            // <Link to="/employee-directory" className={classes.dropdownLink}>
+            // Employee Directory
+            // </Link>,
             <Link to="/note-taker" className={classes.dropdownLink}>
               Note Taker
             </Link>,
@@ -56,10 +64,7 @@ export default function HeaderLinks(props) {
             </Link>,
             <Link to="/budget-tracker" className={classes.dropdownLink}>
               Budget Tracker
-            </Link>,
-            <Link to="/employee-directory" className={classes.dropdownLink}>
-              Employee Directory
-            </Link>
+            </Link>            
           ]}
         />
       </ListItem>

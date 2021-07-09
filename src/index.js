@@ -14,6 +14,7 @@ import ResumePage from "views/ResumePage/ResumePage.js";
 
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import ContactPage from "views/ContactPage/ContactPage.js";
+import FrontEnd from "views/ProjectsPage/Sections/FrontEnd.js";
 import BudgetTracker from "views/ProjectsPage/Sections/BudgetTracker.js";
 import EmployeeDirectory from "views/ProjectsPage/Sections/EmployeeDirectory.js";
 import EmployeeTracker from "views/ProjectsPage/Sections/EmployeeTracker.js";
@@ -31,14 +32,15 @@ ReactDOM.render(
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/components" component={Components} />
       <Route path="/login-page" component={LoginPage} />
+      <Route path="/front-end" component={FrontEnd} />
       <Route path="/budget-tracker" component={BudgetTracker} />
-      <Route path="/employee-directory" component={EmployeeDirectory} />
+      {/* <Route path="/employee-directory" component={EmployeeDirectory} /> */}
       <Route path="/employee-tracker" component={EmployeeTracker} />
-      <Route path="/javascript-quiz" component={JavaScriptQuiz} />
+      {/* <Route path="/javascript-quiz" component={JavaScriptQuiz} /> */}
       <Route path="/note-taker" component={NoteTaker} />
-      <Route path="/password-generator" component={PasswordGenerator} />
+      {/* <Route path="/password-generator" component={PasswordGenerator} /> */}
       <Route path="/readme-generator" component={READMEGenerator} />
-      <Route path="/weather-dashboard" component={WeatherDashboard} />
+      {/* <Route path="/weather-dashboard" component={WeatherDashboard} /> */}
       <Route path="/contact-page" component={ContactPage} />
       <Route path="/resume-page" component={ResumePage} />
       <Route exact path="/" component={ProfilePage} />
