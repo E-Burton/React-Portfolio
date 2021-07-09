@@ -3,21 +3,21 @@
       "id": 1,
       "title": "Password Generator",
       "image": "./images/password-generator-demo.png",
-      "deployedApp": "#",
+      "deployedApp": "https://e-burton.github.io/Password-Generator-JavaScript/",
       "repo": "https://github.com/E-Burton/Password-Generator-JavaScript"
     },
     {
       "id": 2,
       "title": "JavaScript Quiz",
       "image": "./images/quiz-demo.gif",
-      "deployedApp": "#",
+      "deployedApp": "https://e-burton.github.io/Code-Quiz-Web-APIs/",
       "repo": "https://github.com/E-Burton/Code-Quiz-Web-APIs"
     },
     {
       "id": 3,
       "title": "Weather Dashboard",
       "image": "./images/weather-dashboard-demo.gif",
-      "deployedApp": "#",
+      "deployedApp": "https://e-burton.github.io/Weather-Dashboard-Server-Side-APIs/",
       "repo": "https://github.com/E-Burton/Weather-Dashboard-Server-Side-APIs"
     },
     {
