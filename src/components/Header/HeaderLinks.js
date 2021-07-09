@@ -41,6 +41,9 @@ export default function HeaderLinks(props) {
             <Link to="/front-end" className={classes.dropdownLink}>
               Front-End
             </Link>,
+            <Link to="/back-end" className={classes.dropdownLink}>
+              Back-End
+            </Link>,
             // <Link to="/password-generator" className={classes.dropdownLink}>
             //   Password Generator
             // </Link>,
@@ -53,18 +56,18 @@ export default function HeaderLinks(props) {
             // <Link to="/employee-directory" className={classes.dropdownLink}>
             // Employee Directory
             // </Link>,
-            <Link to="/note-taker" className={classes.dropdownLink}>
-              Note Taker
-            </Link>,
-            <Link to="/readme-generator" className={classes.dropdownLink}>
-              README Generator
-            </Link>,
-            <Link to="/employee-tracker" className={classes.dropdownLink}>
-              Employee Tracker
-            </Link>,
-            <Link to="/budget-tracker" className={classes.dropdownLink}>
-              Budget Tracker
-            </Link>            
+            // <Link to="/note-taker" className={classes.dropdownLink}>
+            //   Note Taker
+            // </Link>,
+            // <Link to="/readme-generator" className={classes.dropdownLink}>
+            //   README Generator
+            // </Link>,
+            // <Link to="/employee-tracker" className={classes.dropdownLink}>
+            //   Employee Tracker
+            // </Link>,
+            // <Link to="/budget-tracker" className={classes.dropdownLink}>
+            //   Budget Tracker
+            // </Link>            
           ]}
         />
       </ListItem>
